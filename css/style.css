@@ -200,3 +200,8 @@ a.buttons:active{
     margin-top:20px;
 }
 
+.queonda{
+    background: url("../img/cv.jpg");
+    background-repeat: no-repeat;
+    
+}
