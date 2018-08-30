@@ -1,0 +1,146 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+article {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+}
+
+header {
+	display: grid;
+	padding: 1rem;
+}
+
+main {
+    /*background-color:green ;
+    background: url("backgr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;*/
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+    color: #444;
+    /*padding: 1rem;*/
+    display: grid;
+}
+
+footer {
+	background: #dfdfdf;
+	padding: 5px;
+}
+
+.buttons{
+    font-family: FuenteBkn;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px 6px 0px;
+    background-color: silver;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
+    min-width: 59px;
+    margin-right: 6px;
+    color: #000;
+}
+
+.grid-container{
+    display: grid;
+    justify-self: center;
+}
+
+
+@font-face {
+    font-family: FuenteBkn;
+    src: url(../font/px_sans_nouveaux.ttf);
+}
+
+.disable-select {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+.text-start{
+    font-size: 70%;
+    /*line-height: 1.5;*/
+    letter-spacing: -1px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+
+
+.iexplorer{
+    padding-left: 25px;
+}
+
+.recyclebin{
+    padding-left: 5px;
+}
+
+.grid-item-8{
+    padding-left: 25px;
+}
+
+.grid-item-8-1{
+    font-family: FuenteBkn;
+    color: white;
+    font-size: 9px;
+}
+
+.grid-item-2{
+    padding-left: 20px;
+}
+.grid-item-2-1{
+    font-family: FuenteBkn;
+    color: white;
+    padding-left: 0px;
+    font-size: 9px;
+}
+
+
+.grid-item-1{
+    padding-left: 20px;
+
+}
+
+.grid-item-1-1{
+    font-family: FuenteBkn;
+    color: white;
+    font-size: 9px;
+    padding-left: 0px;
+}
+
+.MyDocuments{
+    padding-left: 17px;
+}
+
+.grid-item-3{
+    padding-left: 5px;
+}
+
+.grid-item-3-1{
+    font-family: FuenteBkn;
+    color: white;
+    font-size: 9px;
+    padding-left: 23px;
+}
+.notepad{
+    padding-left: 45px;
+    padding-top: 0px;
+}
