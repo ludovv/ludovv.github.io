@@ -39,8 +39,10 @@ main {
 }
 
 footer {
-	background: #dfdfdf;
-	padding: 5px;
+    background: #c0c0c0;
+    padding: 5px;
+    height: 37px;
+    box-shadow: inset 1px 1px #dfdfdf, 0px -1px #c0c0c0, inset -1px 1px #808080;
 }
 
 .buttons{
@@ -62,9 +64,34 @@ footer {
     color: #000;
 }
 
+.buttonshora{
+    font-family: FuenteBkn;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px 6px 0px;
+    background-color: #b8b8b8;
+    border-top: 1px solid #808080;
+    border-left: 1px solid gray;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: inset 1px 1px #808080, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
+    min-width: 59px;
+    margin-right: 6px;
+    color: black;
+    font-size: 8px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    height: 31px;
+    right: 4px;
+}
+
 .grid-container{
     display: grid;
-    justify-self: center;
+    
 }
 
 
@@ -87,7 +114,9 @@ footer {
     margin-top: 50px;
 }
 
-
+.grid-item-button{
+    position: relative;
+}
 
 .iexplorer{
     padding-left: 25px;
@@ -160,3 +189,14 @@ a.buttons:active{
  
     
 }
+
+.grid-item-hora{
+    text-align: right;
+    margin-top: -35px;
+    
+}
+
+.text-hora{
+    margin-top:20px;
+}
+
