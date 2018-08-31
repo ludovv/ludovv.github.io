@@ -101,7 +101,7 @@ footer {
     font-family: FuenteBkn;
     margin-left: -3px;
     margin-bottom: 0px;
-    margin-top: -184px;
+    margin-top: -182px;
     /* vertical-align: middle; */
     /* display: block; */
     padding: 1px 0px 1px 1px;
@@ -111,11 +111,11 @@ footer {
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
-    margin-right: 80%;
+    margin-right: 85%;
     color: #000;
     display: none;
     font-size: 8px;
-    min-width: 230px;
+    min-width: 191px;
     
 }
 
@@ -252,6 +252,11 @@ a.buttons:active + .buttonmenu {
 
 li{
     list-style-type: none;
+    
+}
+
+.img-menu{
+    vertical-align: middle;
 }
 
 li:hover{
