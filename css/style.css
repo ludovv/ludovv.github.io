@@ -41,18 +41,18 @@ main {
 footer {
     background: #c0c0c0;
     padding: 5px;
-    height: 37px;
+    height: 20px;
     box-shadow: inset 1px 1px #dfdfdf, 0px -1px #c0c0c0, inset -1px 1px #808080;
 }
 
 .buttons{
     font-family: FuenteBkn;
-    margin-left: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-left: -3px;
+    margin-bottom: 0px;
+    margin-top: -2px;
     vertical-align: middle;
     display: inline-block;
-    padding: 0px 6px 0px;
+    padding: 0px 3px 0px;
     background-color: silver;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
@@ -62,16 +62,18 @@ footer {
     min-width: 59px;
     margin-right: 6px;
     color: #000;
+    height: 22px;
+    
 }
 
 .buttonshora{
     font-family: FuenteBkn;
     margin-left: 2px;
     margin-bottom: 2px;
-    margin-top: 2px;
+    margin-top: -6px;
     vertical-align: middle;
     display: inline-block;
-    padding: 0px 6px 0px;
+    padding: 4px 6px 0px;
     background-color: #b8b8b8;
     border-top: 1px solid #808080;
     border-left: 1px solid gray;
@@ -79,31 +81,30 @@ footer {
     border-bottom: 1px solid white;
     box-shadow: inset 1px 1px #808080, 1px 0 #fff, 0 1px #fff, 1px 1px #fff;
     min-width: 59px;
-    margin-right: 6px;
+    
     color: black;
     font-size: 8px;
     text-align: center;
     position: fixed;
-    height: 31px;
+    height: 18px;
     right: 4px;
 }
 
 .buttonmenu{
     display: grid;
     font-family: FuenteBkn;
-    margin-left: 1px;
+    margin-left: -3px;
     margin-bottom: 0px;
     margin-top: -300px;
     /* vertical-align: middle; */
-    /*display: block;*/
-    padding: 193px 0px 13px 6px;
+    /* display: block; */
+    padding: 204px 0px 12px 8px;
     background-color: silver;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
-   
     margin-right: 80%;
     color: #000;
     display: none;
@@ -130,11 +131,12 @@ footer {
     user-select: none;
 }
 .text-start{
-    font-size: 70%;
-    /*line-height: 1.5;*/
-    letter-spacing: -1px;
+    font-size: 50%;
+    /*line-height: 1.5;
+    letter-spacing: -1px;*/
     font-weight: bold;
     margin-top: 50px;
+    vertical-align: super;
 }
 
 .grid-item-button{
@@ -234,4 +236,9 @@ a.buttons:active + .buttonmenu {
     background: url("../img/cv.jpg");
     background-repeat: no-repeat;
     
+}
+
+.windowsgif{
+    padding: 0px 3px 3px;
+
 }
