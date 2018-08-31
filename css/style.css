@@ -206,7 +206,7 @@ footer {
 }
 
 
-div.buttons:active{
+div.button-start:active{
     border-right: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     border-left: 1px solid #848484;
