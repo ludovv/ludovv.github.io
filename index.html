@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="grid-item-3">
-                <a onclick="miFunction()" ><img src="img/notepad_file-0.png" alt="" class="notepad"></a>
+                <a class="recicleBin" onclick="miFunction()" ><img src="img/notepad_file-0.png" alt="" class="notepad"></a>
                 
                 
                 <div class="grid-item-3-1 disable-select">
@@ -48,7 +48,7 @@
             <div class="grid-item-6"></div>
             <div class="grid-item-7"></div>
             <div class="grid-item-8">
-                <a href=""><img class="recyclebin" src="img/recycle_bin_empty_cool-0.png" alt=""></a>
+                <a href=""><img onclick="cerrar()" class="recyclebin" src="img/recycle_bin_empty_cool-0.png" alt=""></a>
                 
                 <div class="grid-item-8-1">
                     Recycle Bin
@@ -56,9 +56,7 @@
                 
             
             </div>
-            <div class="grid-item-4">
-                
-            </div>
+            
 
                 
     
@@ -86,8 +84,8 @@
                         <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp;  Reboot</li>
                         <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
-                        <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
-                        <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
+                        <li style="border-bottom: 1px solid #aaaaaa;">&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
+                        <li style="border-top: 1px solid #dfdfdf">&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li>&nbsp; <img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         
@@ -125,16 +123,29 @@
         
     });   
 
+    $(".recicleBin").click(function(){
+        window.close();
+    });
+
+
 
     window.onload = function obtenerHora(){
         setInterval(function(){
             var d = new Date();
             var hour = d.getHours();
             var minutes = d.getMinutes();
+            if(minutes < 10){
+                minutes = "0" + minutes;
+            }
+            if(hour < 10){
+                hour = "0" + hour;
+            }
             document.getElementById("hora").innerHTML = hour + ":" + minutes;
 
         }, 1000);
     }
+
+
     
 
 </script>

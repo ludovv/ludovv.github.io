@@ -9,6 +9,10 @@ html, body {
     margin-bottom: 0px;
 }
 
+html:active{
+
+}
+
 article {
 	min-height: 100%;
 	display: grid;
@@ -97,7 +101,7 @@ footer {
     font-family: FuenteBkn;
     margin-left: -3px;
     margin-bottom: 0px;
-    margin-top: -181px;
+    margin-top: -184px;
     /* vertical-align: middle; */
     /* display: block; */
     padding: 1px 0px 1px 1px;
