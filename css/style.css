@@ -96,7 +96,7 @@ footer {
     margin-bottom: 0px;
     margin-top: -300px;
     /* vertical-align: middle; */
-    display: block;
+    /*display: block;*/
     padding: 193px 0px 13px 6px;
     background-color: silver;
     border-top: 1px solid #fff;
@@ -201,7 +201,8 @@ footer {
     padding-top: 0px;
 }
 
-a.buttons:active{
+
+div.buttons:active{
     border-right: 1px solid #dfdfdf;
     border-bottom: 1px solid #dfdfdf;
     border-left: 1px solid #848484;
@@ -213,9 +214,11 @@ a.buttons:active{
     
 }
 
+/*
 a.buttons:active + .buttonmenu {
     display: block;
 }
+*/
 
 .grid-item-hora{
     text-align: right;

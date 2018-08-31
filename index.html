@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
     <link rel="stylesheet" href="css/style.css">
     <title>Portafolio</title>
 </head>
 <body>
+        
 
     <article>
     
@@ -64,18 +66,21 @@
     
     
         <footer>
+                
             <div class="grid-container">
                 <div class="grid-item-button">
-                    <a class="buttons disable-select">
+                        
+                    <div class="buttons disable-select">
+                            
                         
                         <img src="img/windows_slanted-0.png" >  
                         <span class="text-start"> Start</span> 
                         
                         
                         
-                    </a>
+                    </div>
 
-                    <div href="" class="buttonmenu">
+                    <div  href="" class="buttonmenu disable-select">
                         <div> <img src="img/shut_down_cool-3.png" alt="">&nbsp;  Reinstall</div>
                         <div><img src="img/shut_down_cool-3.png" alt="">&nbsp;  Reboot</div>
                         <div><img src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</div>
@@ -95,14 +100,21 @@
             </div>
             
     
-    
+            
         </footer>
 </article>
-    <script>
-        function miFunction(){
-            window.open("./cv.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=300,height=400");
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script> 
+<script>
+    $(".buttons").click(function(){
+        if( $(".buttonmenu").css('display') == 'none') {
+            $(".buttonmenu").css("display","block");
+        }else{
+            $(".buttonmenu").css("display","none");
         }
-    </script>
-    
+
+        
+    });   
+
+</script>
 </body>
 </html>
