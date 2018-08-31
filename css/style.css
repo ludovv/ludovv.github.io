@@ -45,7 +45,7 @@ footer {
     box-shadow: inset 1px 1px #dfdfdf, 0px -1px #c0c0c0, inset -1px 1px #808080;
 }
 
-.buttons{
+.button-start{
     font-family: FuenteBkn;
     margin-left: -3px;
     margin-bottom: 0px;
@@ -63,6 +63,7 @@ footer {
     margin-right: 6px;
     color: #000;
     height: 22px;
+    cursor:pointer;
     
 }
 
@@ -242,4 +243,15 @@ a.buttons:active + .buttonmenu {
 .windowsgif{
     padding: 0px 3px 3px;
 
+}
+
+
+li{
+    list-style-type: none;
+}
+
+li:hover{
+    background-color: #0090e4;
+    color: white;
+    cursor: pointer;
 }
