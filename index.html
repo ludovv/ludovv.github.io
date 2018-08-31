@@ -90,7 +90,9 @@
                     
                     <a class="buttonshora disable-select">
                             
-                        <span class="text-hora">02:45</span>
+                        <span id="hora" class="text-hora">
+                            
+                        </span>
                         
                     </a>
 
@@ -114,6 +116,18 @@
 
         
     });   
+
+
+    window.onload = function obtenerHora(){
+        setInterval(function(){
+            var d = new Date();
+            var hour = d.getHours();
+            var minutes = d.getMinutes();
+            document.getElementById("hora").innerHTML = hour + ":" + minutes;
+
+        }, 1000);
+    }
+    
 
 </script>
 </body>
