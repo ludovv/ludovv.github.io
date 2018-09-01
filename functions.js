@@ -51,3 +51,6 @@ $(".buttonReboot").click(function(){
         $(".buttonmenu").css("display","none");
     }
 });
+ $(".grid-container-item").click(function(){
+    $(".buttonmenu").css("display","none");
+ });
