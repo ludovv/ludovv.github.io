@@ -56,15 +56,14 @@ footer {
     margin-top: -2px;
     vertical-align: middle;
     display: inline-block;
-    padding: 0px 3px 0px;
+    padding: 0px 0px 0px;
     background-color: silver;
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     box-shadow: inset 1px 1px #dfdfdf, 1px 0 #000, 0 1px #000, 1px 1px #000;
-    min-width: 59px;
-    
+    min-width: 53px;
     margin-right: 6px;
     color: #000;
     height: 22px;
@@ -144,6 +143,7 @@ footer {
     font-weight: bold;
     margin-top: 50px;
     vertical-align: super;
+    margin-left: -6px;
 }
 
 .grid-item-button{
@@ -265,4 +265,10 @@ li:hover{
     background-color: #0090e4;
     color: white;
     cursor: pointer;
+}
+
+.grid-container-item{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
 }
