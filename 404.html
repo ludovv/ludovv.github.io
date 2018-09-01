@@ -4,10 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>404</title>
 </head>
 <body>
-    <h1>nop</h1>
+    <style>
+        .grid-item-404{
+            justify-self: center;
+            font-family: FuenteBkn;
+            color: black;
+            
+        }
+        .grid-container-404{
+            display: grid;
+             grid-template-columns: auto auto auto;
+             grid-auto-columns: 25% 25%;
+             grid-template-rows: auto auto auto;
+        }
+        h1{
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;
+        }
+        
+        
+    </style>
+    <div class="grid-container-404">
+        <div class="grid-item-404"></div>
+        <div class="grid-item-404"></div>
+        <div class="grid-item-404"></div>
+
+        <div class="grid-item-404">
+        </div>
+
+        <div class="grid-item-404">
+                <h1 style="text-shadow: 1px 1px red;">La pagina que buscas no existe</h1>
+        </div>
+
+        <div class="grid-item-404"></div>
+
+        <div class="grid-item-404"></div>
+        <div class="grid-item-404"></div>
+        <div class="grid-item-404"></div>
+    
+    </div>
+
+    <script>
+        window.onload = function(){
+            setInterval(function(){
+                $("h1").css("text-shadow","1px 1px 30px red");
+                
+
+            }, 500);
+
+            setInterval(function(){
+                $("h1").css("text-shadow","1px 1px 1px red");
+            }, 1000);   
+        };
+        
+    </script>
+
     
 </body>
 </html>
