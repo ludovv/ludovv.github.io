@@ -278,3 +278,11 @@ li:hover{
     text-decoration:none;
     color:black;
 }
+
+.iframes{
+    display:none;
+    align-self:center; 
+    width: 40vw;
+    box-shadow: inset 0px 18px #000680;
+    background: white;
+}

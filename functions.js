@@ -51,6 +51,18 @@ $(".buttonReboot").click(function(){
         $(".buttonmenu").css("display","none");
     }
 });
- $(".grid-container-item").click(function(){
+
+$(".grid-container-item").click(function(){
     $(".buttonmenu").css("display","none");
+    $(".iframes").css("display","none");
+});
+
+ $(".mostrarVentana").click(function(){
+    if($(".iframes").css("display") == "none"){
+        $(".iframes").css("display","block");
+    }else{
+        $(".iframes").css("display","none");
+    }
+    
+
  });
