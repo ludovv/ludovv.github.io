@@ -40,3 +40,14 @@ $(".botonCerrar").click(function(){
         $(".buttonmenu").css("display","none");
     }
 });
+
+
+$(".buttonReboot").click(function(){
+    var respuesta = confirm("¿Está seguro que desea reiniciar?");
+    if(respuesta == true){
+        window.close();
+        window.open("https://ludovv.github.io/");
+    }else{
+        $(".buttonmenu").css("display","none");
+    }
+});
