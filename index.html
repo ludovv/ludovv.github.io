@@ -25,7 +25,7 @@
                 <img class="MyDocuments" src="img/directory_closed_cool-0.png" alt="">
                 
                 <div class="grid-item-1-1 disable-select">
-                    My Documents
+                    Mis documentos
                 </div>
             </div>
             <div></div>
@@ -90,7 +90,11 @@
                         <li style="border-bottom: 1px solid #aaaaaa">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li style="border-bottom: 1px solid #aaaaaa; border-top: 1px solid #dfdfdf">&nbsp; <img class="img-menu"src="img/installer_generic_old-1.png" alt="">&nbsp; Reinstall</li>
                         <li style="border-top: 1px solid #dfdfdf">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
-                        <li>&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Contacto</li>
+                        
+                        <a class="contactoLi" href="mailto:victorvallejospantojas@gmail.com?Subject=Hola" target="_top">
+                        <li>&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp;  Contacto</li>
+                        </a>
+
                         <li class="botonCerrar" onclick="funcionCerrar()">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Cerrar</li>
                         
 
@@ -129,9 +133,9 @@
         
     });   
 
-    $(".recicleBin").click(function(){
-        window.close();
-    });
+    //$(".recicleBin").click(function(){
+    //    window.close();
+    //});
 
 
 
@@ -155,6 +159,10 @@
         var repuesta = confirm("¿Desea cerrar esta pagina?");
         if(repuesta == true){
             window.close();
+            $(".buttonmenu").css("display","none");
+
+        }else{
+            $(".buttonmenu").css("display","none");
         }
     });
 

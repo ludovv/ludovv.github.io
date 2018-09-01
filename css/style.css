@@ -273,3 +273,8 @@ li:hover{
     align-items: center;
     grid-template-rows: 25% 25% 25% 25%;
 }
+
+.contactoLi{
+    text-decoration:none;
+    color:black;
+}
