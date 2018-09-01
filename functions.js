@@ -55,14 +55,23 @@ $(".buttonReboot").click(function(){
 $(".grid-container-item").click(function(){
     $(".buttonmenu").css("display","none");
     $(".iframes").css("display","none");
+    $(".barra").css("display","none");
+    
 });
 
  $(".mostrarVentana").click(function(){
     if($(".iframes").css("display") == "none"){
         $(".iframes").css("display","block");
+        
     }else{
         $(".iframes").css("display","none");
     }
+    if($(".barra").css("display") == "none"){
+        $(".barra").css("display","block");
+    }else{
+        $(".barra").css("display","none");
+    }
+    
     
 
  });

@@ -223,6 +223,13 @@ div.button-start:active{
     
 }
 
+.button-start::before{
+    border-style: dotted;
+    border: 1px solid;
+    box-shadow: 2px 2px black;
+}
+
+
 /*
 a.buttons:active + .buttonmenu {
     display: block;
@@ -282,7 +289,28 @@ li:hover{
 .iframes{
     display:none;
     align-self:center; 
-    width: 40vw;
-    box-shadow: inset 0px 18px #000680;
+    
+    
     background: white;
+    width: 100%;
+}
+
+.barra{
+    display: none;
+    border: 3px solid #dfdfdf;
+    height: 17px;
+    width: 100%;
+    outline: 1px solid white;
+    outline-offset: -2px;
+    background: #000680;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000680, #1084d0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #000680, #1084d0); 
+    border-right: 2px solid #b83b42;
+}
+
+.text-barra{
+    font-family: FuenteBkn; 
+    color:white; 
+    font-size:8px;
+    vertical-align: top;
 }
