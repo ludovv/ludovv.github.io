@@ -59,7 +59,10 @@ $(".grid-container-item").click(function(){
     
 });
 
- $(".mostrarVentana").click(function(){
+
+
+$(".mostrarVentana").click(function(){
+
     if($(".iframes").css("display") == "none"){
         $(".iframes").css("display","block");
         
@@ -74,4 +77,25 @@ $(".grid-container-item").click(function(){
     
     
 
- });
+});
+
+$(".clickNotas").click(function(){
+
+    setTimeout(function()  {
+        if($(".iframes").css("display") == "none"){
+            $(".iframes").css("display","block");
+            
+        }else{
+            $(".iframes").css("display","none");
+        }
+        if($(".barra").css("display") == "none"){
+            $(".barra").css("display","block");
+        }else{
+            $(".barra").css("display","none");
+        }
+    }, 100);
+    
+    
+
+});
+
