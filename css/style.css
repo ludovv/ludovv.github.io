@@ -101,7 +101,7 @@ footer {
     font-family: FuenteBkn;
     margin-left: -3px;
     margin-bottom: 0px;
-    margin-top: -168px;
+    margin-top: -118px;
     /* vertical-align: middle; */
     /* display: block; */
     padding: 1px 0px 1px 1px;
@@ -203,7 +203,7 @@ footer {
     font-family: FuenteBkn;
     color: white;
     font-size: 9px;
-    padding-left: 15px;
+    padding-left: 26px;
 }
 .notepad{
     padding-left: 38px;
@@ -274,7 +274,7 @@ li:hover{
     grid-template-rows: 25% 25% 25% 25%;
 }
 
-.contactoLi{
+.hrefLi{
     text-decoration:none;
     color:black;
 }
