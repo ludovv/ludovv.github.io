@@ -90,8 +90,8 @@
                         <li style="border-bottom: 1px solid #aaaaaa">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li style="border-bottom: 1px solid #aaaaaa; border-top: 1px solid #dfdfdf">&nbsp; <img class="img-menu"src="img/installer_generic_old-1.png" alt="">&nbsp; Reinstall</li>
                         <li style="border-top: 1px solid #dfdfdf">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
-                        <li>&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Shutdown</li>
                         <li>&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Contacto</li>
+                        <li class="botonCerrar" onclick="funcionCerrar()">&nbsp; <img class="img-menu"src="img/shut_down_cool-3.png" alt="">&nbsp; Cerrar</li>
                         
 
                     </div> 
@@ -150,6 +150,13 @@
 
         }, 1000);
     }
+
+    $(".botonCerrar").click(function(){
+        var repuesta = confirm("¿Desea cerrar esta pagina?");
+        if(repuesta == true){
+            window.close();
+        }
+    });
 
 
     
