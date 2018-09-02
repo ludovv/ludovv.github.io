@@ -84,8 +84,7 @@ $(".clickNotas").click(function(){
 
     setTimeout(function()  {
         if($(".iframes").css("display") == "none"){
-            $(".iframes").css("display","block");
-            
+            $(".iframes").css("display","block");            
         }else{
             $(".iframes").css("display","none");
         }
@@ -95,8 +94,5 @@ $(".clickNotas").click(function(){
             $(".barra").css("display","none");
         }
     }, 100);
-    
-    
-
 });
 
