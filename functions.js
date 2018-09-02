@@ -78,7 +78,7 @@ $(".mostrarVentana").click(function(){
     
 
 });
-*/
+
 
 $(".clickNotas").click(function(){
 
@@ -95,4 +95,4 @@ $(".clickNotas").click(function(){
         }
     }, 100);
 });
-
+*/
