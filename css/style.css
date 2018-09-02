@@ -304,6 +304,7 @@ li:hover{
     background: -webkit-linear-gradient(to right, #000680, #1084d0);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #000680, #1084d0); 
     border-right: 2px solid #b83b42;
+    padding-top: 17px;
 }
 
 .text-barra{
