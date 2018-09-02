@@ -28,7 +28,7 @@ window.onload = function obtenerHora(){
         document.getElementById("hora").innerHTML = hour + ":" + minutes;
 
     }, 1000);
-}
+};
 
 $(".botonCerrar").click(function(){
     var repuesta = confirm("¿Desea cerrar esta pagina?");
@@ -60,7 +60,7 @@ $(".grid-container-item").click(function(){
 });
 
 
-
+/*
 $(".mostrarVentana").click(function(){
 
     if($(".iframes").css("display") == "none"){
@@ -78,6 +78,7 @@ $(".mostrarVentana").click(function(){
     
 
 });
+*/
 
 $(".clickNotas").click(function(){
 

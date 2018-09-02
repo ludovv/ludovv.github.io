@@ -203,7 +203,7 @@ footer {
     font-family: FuenteBkn;
     color: white;
     font-size: 9px;
-    padding-left: 26px;
+    padding-left: 33px;
 }
 .notepad{
     padding-left: 38px;
@@ -276,7 +276,7 @@ li:hover{
 
 .grid-container-item{
     display: grid;
-    grid-template-columns: 35% auto auto;
+    grid-template-columns: 35% auto 35%;
     align-items: center;
     grid-template-rows: 25% 25% 25% 25%;
 }
@@ -311,4 +311,14 @@ li:hover{
     color:white; 
     font-size:8px;
     vertical-align: top;
+}
+
+.info-txt{
+    font-family: FuenteBkn;
+    color: black;
+    text-shadow: 1px 0px 1px red, -1px 0px 1px blue;
+    text-align: center;
+    
+    
+
 }
