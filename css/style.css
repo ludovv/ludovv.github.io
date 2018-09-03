@@ -43,9 +43,12 @@ main {
 }
 
 footer {
+    bottom: 0;
+    position: sticky;
     background: #c0c0c0;
     padding: 5px;
-    height: 20px;
+    /* height: 20px; */
+    /* padding-bottom: 0px; */
     box-shadow: inset 1px 1px #dfdfdf, 0px -1px #c0c0c0, inset -1px 1px #808080;
 }
 
