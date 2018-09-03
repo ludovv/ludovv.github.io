@@ -268,7 +268,7 @@ li{
     vertical-align: middle;
 }
 
-li:hover{
+.menuElement:hover{
     background-color: #0090e4;
     color: white;
     cursor: pointer;
@@ -323,3 +323,34 @@ li:hover{
     
 
 }
+
+
+.mostrarVentana{
+    position: relative;
+}
+.desplegable {
+
+    float: right;
+    margin-top: -18px;
+    position: inherit;
+    position: absolute;
+    left: 100%;
+    background-color: silver;
+    text-align: start;
+    padding: 0;
+    box-shadow: -1px -1px 0px 0px #fff, 1px 1px 0px 0px grey, 1px 1px 0px 1px black;
+    display: none; 
+    border-top: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    padding-top: 0px;
+}
+
+.itemli{
+    padding: 0px 20px 0px 20px;
+    height: 19px;
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #dfdfdf;
+    color:black;
+    white-space:nowrap; /*sin salto de linea*/
+}
+

@@ -60,6 +60,16 @@ $(".grid-container-item").click(function(){
 });
 
 
+
+$(".mostrarVentana").click(function(){
+    if($(".desplegable").css("display")=="none"){
+        $(".desplegable").css("display", "block");
+    }else{
+        $(".desplegable").css("display", "none");
+    }
+})
+
+
 /*
 $(".mostrarVentana").click(function(){
 
