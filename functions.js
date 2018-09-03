@@ -56,6 +56,8 @@ $(".grid-container-item").click(function(){
     $(".buttonmenu").css("display","none");
     $(".iframes").css("display","none");
     $(".barra").css("display","none");
+    $(".desplegable").css("display", "none");
+
     
 });
 
