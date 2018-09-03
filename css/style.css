@@ -270,7 +270,7 @@ li{
 
 .menuElement:hover{
     background-color: #0090e4;
-    color: white;
+    color: white !important;
     cursor: pointer;
 }
 
@@ -347,7 +347,7 @@ li{
 
 .itemli{
     padding: 0px 20px 0px 20px;
-    height: 19px;
+    height: 17px;
     border-bottom: 1px solid #aaaaaa;
     border-top: 1px solid #dfdfdf;
     color:black;
