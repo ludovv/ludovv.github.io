@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Ejemplo 1</title>
+</head>
+<body style="margin:0;padding:0;">
+    <style>
+    .titulo{
+        background-color: #E84A5F;
+
+    }
+
+    .disable-select{
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+         user-select: none;
+    }
+
+    .grid-container{
+        background-color: #FECEA8;
+        display:grid; 
+        /* row-gap: 30px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        
+    }
+    .header-menu{
+        font-family: "Montserrat" sans-serif;
+        box-shadow: 0px 1px #e84a5f;
+        border-bottom: 1px solid #e1939e;
+        width: 100%;
+        text-shadow: 1px 1px 0px white;
+        /* position: sticky; */
+        position: -webkit-sticky;
+        top: 0;
+        display: grid;
+        grid-column: 1/4;
+        background-color: #e84a5f;
+    }
+    .title{
+        text-align: center;
+        font-style: normal;
+        letter-spacing: 10px;
+        font-family: 'Montserrat', sans-serif; 
+        color:black;
+        grid-column: 2/3;
+    }
+    .title-container{
+        background-color:white;
+        width: 100%;
+        grid-column: 1/4;
+        display: grid;
+    }
+    .headers{
+        padding: 0px 0px 10px 0px;
+        text-shadow: -1px 1px 0px white;
+        color: black; 
+        font-family: 'PT Mono', monospace;
+        grid-column: 1/4;
+        text-align: center;
+    }
+    .footer{
+        box-shadow: 0px -1px #e84a5f;
+        border-top: 1px solid #e1939e; 
+        height: 30px;
+        background-color: #e84a5f;
+        grid-column:1/4; 
+        width: 100%; 
+        position: sticky; 
+        position: -webkit-sticky; 
+        bottom:0;
+    }
+
+    .footer-text{
+        text-shadow: 1px 0px 1px white;
+        vertical-align: -webkit-baseline-middle;
+        text-decoration: none;
+        font-family: Montserrat; 
+    }
+    .img-style{
+        text-align:center;
+        box-shadow: 0px 0px 20px 2px black;
+    }
+    .footer-icon{
+        vertical-align: sub;
+    }
+    .img-title{
+        font-size: calc(16px + 2vw);
+    }
+    .menu-item{
+        justify-self: center;
+        padding: 5px;
+    }
+    .menu-icon{
+        grid-column: 3/4;
+        align-self: center;
+        justify-self: center;
+      
+    }
+
+    .menu-invisible{
+        grid-column:  1/2;
+    }
+    @media screen and (max-width: 600px){
+        .menu-item{
+            grid-column: 1/2!important;
+        }
+       
+        .about, .contact{
+            display: none;
+        }
+        .fas{
+            display: block!important;
+        }
+
+    }
+    .fas{
+        display:none;
+    }
+    @media screen and (min-width: 601px){
+        .about, .contact{
+            display: block!important;
+        }
+    }
+
+  
+    
+    </style>
+
+    <div class="grid-container">
+        <div class="title-container">
+            <div class="menu-invisible"></div>
+            
+            <div class="title">
+                    <h1 class="disable-select">TITLE</h1>
+            </div>
+            <div class="menu-icon" ><i class="fas fa-bars"></i> </div>
+            
+        </div>
+        <div class="header-menu">
+            
+            <div style="grid-column: 1/2;" class="menu-item home">HOME</div>
+            <div style="grid-column: 2/3;" class="menu-item about">ABOUT</div>
+            <div style="grid-column: 3/4;" class="menu-item contact">CONTACT</div>
+        </div>
+        <div class="headers disable-select"> <h1 class="img-title" >X</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam a rem beatae, sapiente tempora ut ex nesciunt dignissimos debitis distinctio iste? Assumenda quibusdam vero, cum ad et facere similique!</p>
+        </div>
+        <div></div>
+            <div>
+                    <img class="img-style" src="" height="400px" alt="">
+            </div>
+        <div></div>
+      
+        <div class="headers disable-select"><h1 class="img-title" >X</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus pariatur iste delectus et error repudiandae distinctio saepe ut optio animi magni aliquam earum impedit voluptates voluptas, fugit non numquam. Commodi!</p>
+        </div>
+
+        <div></div>
+        
+        <div>
+                <img class="img-style"  src="" height="150px" alt="">
+        </div>
+        <div></div>
+        <div></div>
+        <div>
+                <img class="img-style" src="" height="150px" alt="">
+        </div>
+        <div></div>
+        <div class="footer" >
+            
+            <a class="footer-text" href="https://ludovv.github.io/">
+                <img class="footer-icon" width="25px" height="25px" src="img/arrowleft.gif" alt="">VOLVER</a>
+        </div>
+    </div>
+    <script>
+        $(".menu-icon").click(function(){
+        if($(".about, .contact").css("display") == "none"){
+           
+            $(".about, .contact").css("display", "block");
+        }else if($(".about, .contact").css("display") == "block"){
+            $(".about, .contact").css("display","none");
+
+        }
+        
+
+});
+    </script>
+</body>
+</html>
