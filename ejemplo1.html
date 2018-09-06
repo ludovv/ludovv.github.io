@@ -68,7 +68,7 @@
         text-shadow: -1px 1px 0px white;
         color: black; 
         font-family: 'PT Mono', monospace;
-        grid-column: 2/3;
+        /*grid-column: 2/3;*/
         text-align: center;
     }
     .footer{
@@ -121,6 +121,15 @@
     .menu-invisible{
         grid-column:  1/2;
     }
+
+    .parrafo1{
+        grid-row: 4/7;
+        grid-column: 1/2;
+    }
+    .parrafo2{
+        grid-row: 4/5;
+        grid-column: 3/4;
+    }
     @media screen and (max-width: 600px){
         .menu-item{
             grid-column: 1/2!important;
@@ -168,8 +177,11 @@
             <div id="panel" style="grid-column: 2/3;" class="menu-item about">ABOUT</div>
             <div id="panel" style="grid-column: 3/4;" class="menu-item contact">CONTACT</div>
         </div>
-        <div class="headers disable-select"> <h1 class="img-title" >Lorem</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam a rem beatae, sapiente tempora ut ex nesciunt dignissimos debitis distinctio iste? Assumenda quibusdam vero, cum ad et facere similique!</p>
+        <div class="headers parrafo1 disable-select"> <h1 class="img-title" >Lorem</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam a rem beatae, sapiente tempora ut ex nesciunt dignissimos debitis distinctio iste? Assumenda quibusdam vero, cum ad et facere similique!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt similique aliquam dolorum, debitis impedit sed ipsum, corporis asperiores voluptatem, excepturi eius nulla ipsa quam a magni vel doloribus enim.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum officiis a consectetur ut, quas vel, in voluptatum est aperiam esse doloremque, dicta magni expedita quibusdam adipisci libero explicabo aspernatur.
+            </p>
         </div>
         <div></div>
             <div>
@@ -177,7 +189,7 @@
             </div>
         <div></div>
       
-        <div class="headers disable-select"><h1 class="img-title" >Lorem</h1>
+        <div class="headers parrafo2 disable-select"><h1 class="img-title" >Lorem</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus pariatur iste delectus et error repudiandae distinctio saepe ut optio animi magni aliquam earum impedit voluptates voluptas, fugit non numquam. Commodi!</p>
         </div>
 
