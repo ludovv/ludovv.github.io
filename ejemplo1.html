@@ -59,6 +59,7 @@
         grid-column: 1/4;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        
     }
     .headers{
         padding: 0px 0px 10px 0px;
@@ -155,8 +156,8 @@
         <div class="header-menu">
             
             <div style="grid-column: 1/2;" class="menu-item home">HOME</div>
-            <div style="grid-column: 2/3;" class="menu-item about">ABOUT</div>
-            <div style="grid-column: 3/4;" class="menu-item contact">CONTACT</div>
+            <div id="panel" style="grid-column: 2/3;" class="menu-item about">ABOUT</div>
+            <div id="panel" style="grid-column: 3/4;" class="menu-item contact">CONTACT</div>
         </div>
         <div class="headers disable-select"> <h1 class="img-title" >Lorem</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam a rem beatae, sapiente tempora ut ex nesciunt dignissimos debitis distinctio iste? Assumenda quibusdam vero, cum ad et facere similique!</p>
@@ -189,17 +190,40 @@
         </div>
     </div>
     <script>
-        $(".menu-icon").slideDown(2000).click(function(){
+        /*
+        $(".menu-icon").click(function(){
         if($(".about, .contact").css("display") == "none"){
            
             $(".about, .contact").css("display", "block");
+           
         }else if($(".about, .contact").css("display") == "block"){
             $(".about, .contact").css("display","none");
 
         }
+        });
+        
+        $(".menu-icon").click(function(){
+        $(".about, .contact").slideDown();
+        });
+        
         
 
-});
+        $(".menu-icon").click(function(){
+            if(".about, .contact").slideDown()== true{
+                $(".about, .contact").slideUp();
+            }else{
+
+            }
+        });
+        */
+
+        $( ".menu-icon").click(function () {
+        if ($(".about, .contact").is(":hidden")){
+            $(".about, .contact").slideDown("slow");
+        } else {
+            $(".about, .contact").slideUp();
+        }
+        });
     </script>
 </body>
 </html>
