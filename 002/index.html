@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:700" rel="stylesheet">
+
     <title>Psyconauta</title>
 </head>
-<body>
+<body style="margin:0; padding:0;">
+    <style>
+
+    body{
+        background-color: #212226;
+    }
+    h1{
+        font-family: 'Space Mono', monospace;
+ 
+    }
+    .uno{
+        
+        position: absolute;
+      
+        
+        z-index: 1;
+        color: red;
+        opacity: 0.5;
+        font-size: 200%;
+        margin: auto;
+        
+        
+        text-shadow: 2px -2px 8px red;
+
+    }
+    .dos{
+        position: absolute;
+     
+        top: 4px;
+        color: blue;
+        z-index: 3;
+        opacity: 0.5;
+        font-size: 200%;
+        text-shadow: -2px 2px 8px blue;
+
+    }
+    .tres{
+        position: absolute;
+        
+        top: 2px;
+        z-index: 2;
+        color: black;
+        opacity: 0.5;
+        font-size: 200%;
+
+    }
+    .contenedor{
+        position: relative;
+        top: -50px;
+        left: -180px
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header-{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        justify-self: center;
+        padding: 30px;
+    }
+    .body-{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        padding: 30px;
+        justify-self: center;
+    }
+    .footer-{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        padding: 30px;
+        justify-self: center;
+    }
+
+
+    </style>
+   
+
+    <div class="grid-container">
+        <div class="header-">
+                <div class="contenedor">
+
+                        <div class="uno">
+                            <h1>PSICONAUTA</h1>
+                        </div>
+                
+                        <div class="dos">
+                            <h1>PSICONAUTA</h1>
+                        </div>
+                
+                        <div class="tres">
+                            <h1>PSICONAUTA</h1>
+                        </div>
+                
+                    </div>
+        </div>
+
+        <div class="body-">
+            <h1 style="display:none;">body</h1>
+        </div>
+
+        <div class="footer-">
+            <h1 style="display:none;">footer</h1>
+        </div>
+
+
+    </div>
+              
+
+
+
+
+
+    <script>
+    $(window).mousemove(function(event) {
+    $(".uno").css({
+    "margin-left": -(event.pageX * 0.01),
+    "margin-top": -(event.pageY * 0.02) 
+    });
+
+     $(".dos").css({
+    "margin-left": -(event.pageX * 0.02),
+    "margin-top": -(event.pageY * 0.01)
+     });
+
+    $(".tres").css({
+    "margin-left": -(event.pageX * 0.03),
+    "margin-top": -(event.pageY * 0.03)
+  });
+});
+
+    </script>
     
 </body>
 </html>
