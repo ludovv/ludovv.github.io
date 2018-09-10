@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
-    <title>Psyconauta</title>
+
+    <title>Psiconauta</title>
 </head>
 <body style="margin:0; padding:0;">
     <style>
@@ -16,7 +18,10 @@
         background-color: #212226;
     }
     h1{
-        font-family: 'Space Mono', monospace;
+        /*font-family: 'Space Mono', monospace;*/
+        font-family: 'Monoton', cursive;
+        font-size: 50px;
+
  
     }
     .uno{
@@ -27,7 +32,6 @@
         z-index: 1;
         color: red;
         opacity: 0.5;
-        font-size: 200%;
         margin: auto;
         
         
@@ -41,7 +45,7 @@
         color: blue;
         z-index: 3;
         opacity: 0.5;
-        font-size: 200%;
+        
         text-shadow: -2px 2px 8px blue;
 
     }
@@ -52,7 +56,6 @@
         z-index: 2;
         color: black;
         opacity: 0.5;
-        font-size: 200%;
 
     }
     .contenedor{
@@ -62,6 +65,7 @@
     }
 
     .grid-container{
+        grid-gap: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -84,7 +88,20 @@
         padding: 30px;
         justify-self: center;
     }
+    @media screen and (max-width:600px) {
+        h1{
+            font-size: 30px;
+        }
+        .contenedor{
+            top: -30px;
+             left: -120px;
+        }
+    }
 
+    img{
+        width: 100%;
+        height: auto;
+    }
 
     </style>
    
@@ -110,6 +127,7 @@
 
         <div class="body-">
             <h1 style="display:none;">body</h1>
+            <img src="body.jpg" alt="">
         </div>
 
         <div class="footer-">
