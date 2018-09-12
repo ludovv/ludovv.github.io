@@ -167,11 +167,15 @@
         align-content: middle;
         grid-column: 1/7;
         justify-self: normal;
-        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+        grid-template-columns:  1fr 1fr 1fr ;
         border-bottom: 1px solid #e7e7e7;
         position: sticky;
         top:0;
-        background-color: white;
+        /*background-color: white;*/
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
     }
     .grid1{
@@ -180,27 +184,13 @@
     }
     .grid2{
         grid-column: 2/3;
+        padding: 20px;
     }
     .grid3{
         grid-column: 3/4;
     }
-    .grid4{
-        grid-column: 4/5;
-    }
-    .grid5{
-        grid-column: 5/6;
-    }
-    .grid6{
-        grid-column: 6/7;
-    }
-    .grid7{
-        grid-column: 7/8;
-    }
-    .grid8{
-        grid-column: 8/9;
-        align-self: center;
-    }
-    h4, h6{
+    
+    h4, h1, h6{
         font-family: "Montserrat", sans-serif;
     }
     input{
@@ -211,6 +201,8 @@
     }
     .body-container{
         display: grid;
+        grid-column: 1/4;
+        text-align: center;
     }
 
     .body-parallax{
@@ -218,20 +210,21 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-image: url('img/fondo.JPG');
+        
+
+        height: 100%; 
+    }
+
+    h2{
+        font-family: monospace, sans-serif;
+        color:white;
+        padding: 20px;
+        text-shadow: 1px 1px #E84A5F;
     }
 
     @media screen and (max-width: 600px){
-        .grid1{
-            grid-column: 2/3!important;
-        }
-        .grid2{
-            grid-column: 2/3!important;
-            display:none;
-        }
-        .grid3{
-            grid-column: 2/3!important;
-            display: none;
-        }
+        
         
 
 
@@ -244,22 +237,21 @@
     <div class="grid-container">
         <div class="header-container">
             <div class="grid1 item-menu">
-                <img height="50px" src="../001/img/logo.PNG" alt="">
             </div>
-            <div class="grid2 item-menu"><h4>HOLA</h4></div>
-            <div class="grid3 item-menu"><h4>MENU</h4></div>
-            <div class="grid4 item-menu"><h4>CONTACTO</h4></div>
-            <div class="grid5 item-menu"><h4>CLIENTES</h4></div>
-            <div class="grid6 item-menu"><h4>RECOMENDAR</h4></div>
-            <div class="grid7 item-menu"><h6>Ventas: +569 9999 2999<br>Contacto: +569 9898 1828</h6></div>
-            <div class="grid8 item-menu"><input type="button" value="Pruébalo Gratis"></div>
+            <div class="grid2 item-menu"><h2>LOTA</h2></div>
+            <div class="grid3 item-menu"><h4></h4></div>
+            
             
           
             
         </div>
         <div class="body-container body-parallax">
-            <img src="" alt="">
-            <div style="height: 1000px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa nisi obcaecati harum suscipit ipsum consectetur velit, quasi impedit a pariatur molestiae voluptatibus est eaque modi consequuntur saepe dolorem officiis corrupti.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae est placeat asperiores cupiditate reiciendis exercitationem, quas, nostrum omnis incidunt temporibus, provident in ipsum. Et sapiente eos excepturi corrupti sit natus. </div>
+         
+            <div style="height: 1000px">
+                <h2>Lota (en mapudungun: louta, ‘pequeño caserío’)? es una comuna y ciudad de Chile ubicada en la provincia de Concepción, región del Biobío. Forma parte de la denominada área metropolitana del Gran Concepción.<br>
+
+                        La comuna es célebre por sus yacimientos carboníferos, ligados a la historia y desarrollo económico de Chile, así como por sus trabajadores de la minería subterránea. Es además la comuna chilena con más reconocimiento patrimonial, sumando diez Monumentos Históricos Nacionales al 2011, tramitándose actualmente 5 más.</h2>
+            </div>
         </div>
 
 
