@@ -21,26 +21,45 @@
     h1{
         /*font-family: 'Space Mono', monospace;*/
         font-family: 'Monoton', cursive;
-        font-size: 50px;
+        font-size: 51px;
 
  
     }
     .uno{
-        z-index: 1;
-        color: #ff8989;
+        position: relative;
+        z-index: 3;
+        color: #9696fe;
         opacity: 0.5;
         text-shadow: 2px -2px 8px red;
+        margin-left: 20px;
+    margin-top: -15px;
+     
     }
     .dos{
-        color: #9696fe;
+        position: absolute;
+        
+        color: #46e5b2;
+        
         z-index: 2;
         opacity: 0.5; 
         text-shadow: -2px 2px 8px blue;
+        margin-left: 31px;
+    margin-top: -15px;
 
     }
     .tres{
-        z-index: 3;
-        color: #46e5b2;
+        position: absolute;
+        z-index: 1;
+        color: #ff8989;;
+        opacity: 0.5;
+        margin-left: 22px;
+        margin-top: -22px;
+
+    }
+    .cuatro{
+        position: absolute;
+        z-index: 4;
+        color: #ff8989;
         opacity: 0.5;
 
     }
@@ -75,6 +94,11 @@
         justify-self: center;
         opacity: 0.08;
     }
+
+    #scene{
+      
+
+    }
     @media screen and (max-width:600px) {
         h1{
             font-size: 30px;
@@ -95,21 +119,22 @@
 
     <div class="grid-container">
         <div class="header-">
-                <div id="scene" class="contenedor">
-
-                        <div data-depth="0.3" class="uno">
+                <div class="contenedor">
+                    <div id="scene">
+                    <div  data-depth="0.3" class="uno">
                             <h1>PSICONAUTA</h1>
-                        </div>
-                
-                        <div data-depth="0.6" class="dos">
-                            <h1>PSICONAUTA</h1>
-                        </div>
-                
-                        <div data-depth="0.9" class="tres">
-                            <h1>PSICONAUTA</h1>
-                        </div>
-                
                     </div>
+                        
+                    <div data-depth="0.4" class="dos">
+                        <h1>PSICONAUTA</h1>
+                    </div>
+            
+                    <div data-depth="0.6" class="tres">
+                        <h1>PSICONAUTA</h1>
+                    </div> 
+                </div>
+                
+                </div>
         </div>
 
         <div class="body-">
