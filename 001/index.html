@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Pagina web</title>
+    <title>Proyecto Apple</title>
 </head>
 <body style="margin:0;padding:0;">
     <style>
@@ -25,17 +25,6 @@
          user-select: none;
     }
 
-    /*
-    .grid-container{
-        display:grid; 
-        row-gap: 30px; 
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        position:sticky;
-        top:0;
-        
-    } 
-    */
     
     .header-menu{
         font-family: "Montserrat" sans-serif;
@@ -118,12 +107,12 @@
     }
 
     @font-face {
-        font-family: FuentePulenta;
-        src: url(fuentebkn.ttf);
+        font-family: "myriad-set-pro_thin";
+        src: url(myriad-set-pro_thin.ttf);
     }
 
     @font-face{
-        font-family: FuenteDos;
+        font-family: "SF-Pro-Display-Bold";
         src:url(SF-Pro-Display-Bold.otf);
     }
     
@@ -184,9 +173,7 @@
         justify-self: normal;
         grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         color:white;
-       
-       
-        
+           
 
     }
     .grid1{
@@ -225,7 +212,7 @@
         font-size: 15px;
     }
     h4{
-        font-family: FuentePulenta;
+        font-family: "myriad-set-pro_thin";
         
     }
     .body-container{
@@ -236,11 +223,7 @@
         background-color: black;
     }
 
-    .body-parallax{
-   
-    }
 
-   
 
     @media screen and (max-width: 600px){
         .grid1, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12{
@@ -266,11 +249,6 @@
             padding-left: 3vh;
         }
 
-        
-
-
-       
-
     }
 
     .fa-search{
@@ -284,7 +262,7 @@
         text-align: center;
         font-size:50px;
         color:#d0ad95;
-        /*font-family: FuentePulenta;*/
+        /*font-family: "SF-Pro-Display-Bold";*/
     }
     .fa-bars{
         display:none;
@@ -294,7 +272,7 @@
     }
 
     .parrafo{
-        font-family: FuentePulenta;
+        font-family: "SF-Pro-Display-Bold";
         
     }
     .positionsticky{
@@ -348,32 +326,6 @@
 
 
     <script>
-        /*
-        $(".menu-icon").click(function(){
-        if($(".about, .contact").css("display") == "none"){
-           
-            $(".about, .contact").css("display", "block");
-           
-        }else if($(".about, .contact").css("display") == "block"){
-            $(".about, .contact").css("display","none");
-
-        }
-        });
-        
-        $(".menu-icon").click(function(){
-        $(".about, .contact").slideDown();
-        });
-        
-        
-
-        $(".menu-icon").click(function(){
-            if(".about, .contact").slideDown()== true{
-                $(".about, .contact").slideUp();
-            }else{
-
-            }
-        });
-        */
 
         $( ".menu-icon").click(function () {
         if ($(".about, .contact").is(":hidden")){

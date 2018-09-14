@@ -4,167 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
-
-    <title>Psiconauta</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Diseño</title>
 </head>
-<body style="margin:0; padding:0;">
+<body style="margin:0;padding:0;">
     <style>
-
-    body{
-        background-color: #212226;
-    }
-    h1{
-        /*font-family: 'Space Mono', monospace;*/
-        font-family: 'Monoton', cursive;
-        font-size: 50px;
-
- 
-    }
-    .uno{
-        
-        position: absolute;
-      
-        
-        z-index: 1;
-        color: #ff8989;
-        opacity: 0.5;
-        margin: auto;
-        
-        
-        text-shadow: 2px -2px 8px red;
+    .titulo{
+        background-color: #E84A5F;
 
     }
-    .dos{
-        position: absolute;
-     
-        top: 4px;
-        color: #9696fe;
-        z-index: 3;
-        opacity: 0.5;
-        
-        text-shadow: -2px 2px 8px blue;
 
+    .disable-select{
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+         user-select: none;
+        text-align: center;
+        /*font-style: italic;*/
+        letter-spacing: 10px;
+        font-family: 'Montserrat', sans-serif; 
+        color:black;
     }
-    .tres{
-        position: absolute;
-        
-        top: 2px;
-        z-index: 2;
-        color: #46e5b2;
-        opacity: 0.5;
+    .parrafo{
+        padding: 10px 0px 10px 0px;
+        text-shadow: -1px 1px 0px white; 
+        font-size: calc(16px + 2vw);
+        color:black; 
+        font-family: 'PT Mono', monospace;
+        grid-column: 1/4;
+        text-align: center;
+    }
+    .tarjetas{
+        text-align:center;
+        box-shadow: 0px 0px 20px 2px black; 
+    }
+    a{
+        text-shadow: 1px 0px 1px white;
+        vertical-align: -webkit-baseline-middle;
+        text-decoration: none;
+        font-family: "Montserrat"; 
+    }
 
+    .footer{
+        box-shadow: 0px -1px #e84a5f;
+        border-top: 1px solid #e1939e; 
+        height: 30px;
+        background-color: #e84a5f;
+        grid-column:1/4; 
+        width: 100%; 
+        position: sticky; 
+        position: -webkit-sticky; 
+        bottom:0;
     }
-    .contenedor{
-        position: relative;
-        top: -50px;
-        left: -180px
+    .titulo{
+        box-shadow: 0px 1px #e84a5f;
+        border-bottom: 1px solid #e1939e;
+        width: 100%; 
+        text-shadow: -1px 1px 0px white; 
+        position: sticky; 
+        position: -webkit-sticky; 
+        top:0; 
+        grid-column:1/4;
     }
-
     .grid-container{
-        grid-gap: 20px;
-        display: grid;
+        background-color: #FECEA8;
+        display:grid; 
+        row-gap: 30px; 
         grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .parrafo1{
+        padding: 0px 0px 10px 0px;
+        text-shadow: -1px 1px 0px white;
+        color: black; 
+        font-family: 'PT Mono', monospace;
+        grid-column: 1/4;
+        text-align: center;
     }
 
-    .header-{
-        grid-column: 1/4;
-        grid-row: 1/2;
-        justify-self: center;
-        padding: 30px;
-    }
-    .body-{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        padding: 30px;
-        justify-self: center;
-       
-    }
-    .footer-{
-        grid-column: 1/4;
-        grid-row: 3/4;
-        padding: 30px;
-        justify-self: center;
-        opacity: 0.08;
-    }
-    @media screen and (max-width:600px) {
-        h1{
-            font-size: 30px;
-        }
-        .contenedor{
-            top: -30px;
-             left: -120px;
-        }
-        
-    }
-
-    img{
-        width: 100%;
-        height: auto;
-    }
-
+  
+    
     </style>
-   
 
     <div class="grid-container">
-        <div class="header-">
-                <div class="contenedor">
-
-                        <div class="uno">
-                            <h1>PSICONAUTA</h1>
-                        </div>
-                
-                        <div class="dos">
-                            <h1>PSICONAUTA</h1>
-                        </div>
-                
-                        <div class="tres">
-                            <h1>PSICONAUTA</h1>
-                        </div>
-                
-                    </div>
+        <div class="titulo">
+            <h1 class="disable-select">DISEÑO</h1>
+        </div>
+        <div class="headers parrafo1 disable-select" > 
+            <h1 style="font-size: calc(16px + 2vw);">Flyer estudio jurídico</h1>
+        </div>
+        <div></div>
+            <div>
+                    <img class="tarjetas" src="../img/flyer-estudio.jpg" height="400px" alt="">
+            </div>
+        <div></div>
+      
+        <div class="headers parrafo 2disable-select" >
+            <h1 style="font-size: calc(16px + 2vw);">Tarjetas estudio jurídico</h1>
         </div>
 
-        <div class="body-">
-            <h1 style="display:none;">body</h1>
-            <img src="body.jpg" alt="">
+        <div></div>
+        
+        <div>
+                <img class="tarjetas" src="../img/tarjetas-estudio-1.jpg" height="150px" alt="">
         </div>
-
-        <div class="footer-">
-            <h1 style="display:none;">footer</h1>
-            <h3 style="color:white;font-family:'Courier New', Courier, monospace;">próximamente</h3>
+        <div></div>
+        <div></div>
+        <div>
+                <img class="tarjetas" src="../img/tarjetas-estudio-2.jpg" height="150px" alt="">
         </div>
-
-
+        <div></div>
+        <div class="footer" >
+            
+            <a href="https://ludovv.github.io/">
+                <img style="vertical-align: sub;" width="25px" height="25px" src="../img/arrowleft.gif" alt="">VOLVER</a>
+        </div>
     </div>
-              
-
-
-
-
-
-    <script>
-    $(window).mousemove(function(event) {
-    $(".uno").css({
-    "margin-left": -(event.pageX * 0.01),
-    "margin-top": -(event.pageY * 0.02) 
-    });
-
-     $(".dos").css({
-    "margin-left": -(event.pageX * 0.02),
-    "margin-top": -(event.pageY * 0.01)
-     });
-
-    $(".tres").css({
-    "margin-left": -(event.pageX * 0.03),
-    "margin-top": -(event.pageY * 0.03)
-  });
-});
-
-    </script>
     
 </body>
 </html>

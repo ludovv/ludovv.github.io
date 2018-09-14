@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
 
-    <title>Psiconauta</title>
+    <title>Efecto Parallax</title>
 </head>
 <body style="margin:0; padding:0;">
     <style>
@@ -19,7 +19,6 @@
         background-color: #212226;
     }
     h1{
-        /*font-family: 'Space Mono', monospace;*/
         font-family: 'Monoton', cursive;
         font-size: 51px;
 
@@ -32,7 +31,7 @@
         opacity: 0.5;
         text-shadow: 2px -2px 8px red;
         margin-left: 21px;
-        margin-top: -25px;
+        margin-top: -40px;
      
     }
     .dos{
@@ -63,10 +62,6 @@
         opacity: 0.5;
 
     }
-    .contenedor{
-        
-       
-    }
 
     .grid-container{
         grid-gap: 20px;
@@ -78,34 +73,31 @@
         grid-column: 1/4;
         grid-row: 1/2;
         justify-self: center;
-        padding: 30px;
+        padding: 20px;
     }
     .body-{
         grid-column: 1/4;
         grid-row: 2/3;
-        padding: 30px;
+        padding: 20px;
         justify-self: center;
        
     }
     .footer-{
         grid-column: 1/4;
         grid-row: 3/4;
-        padding: 30px;
+        padding: 20px;
         justify-self: center;
         opacity: 0.08;
     }
 
-    #scene{
-      
-
-    }
     @media screen and (max-width:600px) {
         h1{
             font-size: 30px;
         }
-        .contenedor{
-       
+        .header-{
+            padding: 60px;
         }
+ 
         
     }
 
@@ -122,7 +114,7 @@
                 <div class="contenedor">
                     <div id="scene">
                     <div  data-depth="0.3" class="uno">
-                            <h1>PSICONAUTA</h1>
+                        <h1>PSICONAUTA</h1>
                     </div>
                         
                     <div data-depth="0.4" class="dos">
@@ -159,24 +151,7 @@
     <script>
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);
-    /*
-    $(window).mousemove(function(event) {
-    $(".uno").css({
-    "margin-left": -(event.pageX * 0.01),
-    "margin-top": -(event.pageY * 0.02) 
-    });
 
-     $(".dos").css({
-    "margin-left": -(event.pageX * 0.02),
-    "margin-top": -(event.pageY * 0.01)
-     });
-
-    $(".tres").css({
-    "margin-left": -(event.pageX * 0.03),
-    "margin-top": -(event.pageY * 0.03)
-  });
-});
-    */
     </script>
     
 </body>
