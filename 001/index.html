@@ -25,16 +25,18 @@
          user-select: none;
     }
 
+    /*
     .grid-container{
-        background-color: white;
         display:grid; 
-        /* row-gap: 30px; */
+        row-gap: 30px; 
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         position:sticky;
         top:0;
         
-    }
+    } 
+    */
+    
     .header-menu{
         font-family: "Montserrat" sans-serif;
         /*box-shadow: 0px 1px black;*/
@@ -47,7 +49,6 @@
         display: grid;
         grid-column: 1/4;
         color:black;
-        background-color: white;
         border-radius: 20px;
     }
     .title{
@@ -59,7 +60,6 @@
         grid-column: 2/3;
     }
     .title-container{
-        background-color:white;
         width: 100%;
         grid-column: 1/4;
         display: grid;
@@ -183,10 +183,10 @@
         grid-column: 1/7;
         justify-self: normal;
         grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        color:white;
        
-        position: sticky;
-        top:0;
-        background-color: black;
+       
+        
 
     }
     .grid1{
@@ -240,10 +240,7 @@
    
     }
 
-    .jaja{
-        box-shadow: 0px 5px 100px 2px black;
-
-    }
+   
 
     @media screen and (max-width: 600px){
         .grid1, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12{
@@ -300,33 +297,37 @@
         font-family: FuentePulenta;
         
     }
+    .positionsticky{
+        position: sticky;
+        top:0;
+        background-color: black;
+        box-shadow: 0px 12px 100px 20px black;
+    }
 
 
     </style>
 
-    <div class="grid-container">
-        <div class="header-container jaja">
-            <div class="grid1 item-menu"><i class="fas fa-bars"></i></div>
-            <div class="grid2 item-menu"><h4><i class="fab fa-apple"></i></h4></div>
-            <div class="grid3 item-menu"><h4>Mac</h4></div>
-            <div class="grid4 item-menu"><h4>iPad</h4></div>
-            <div class="grid5 item-menu"><h4>iPhone</h4></div>
-            <div class="grid6 item-menu"><h4>Watch</h4></div>
-            <div class="grid7 item-menu"><h4>TV</h4></div>
-            <div class="grid8 item-menu"><h4>Music</h4></div>
-            <div class="grid9 item-menu"><h4>Soporte</h4></div>
-            <div class="grid10 item-menu"><h4>Dónde comprar</h4></div>
-            <div class="grid11 item-menu"><i class="fas fa-search"></i></div>
-            <div class="grid12 item-menu"><h4></h4></div>
-         
-            
-          
-            
-        </div>
+    <div class="positionsticky">
+       <div class="header-container">
+        <div class="grid1 item-menu"><i class="fas fa-bars"></i></div>
+        <div class="grid2 item-menu"><h4><i class="fab fa-apple"></i></h4></div>
+        <div class="grid3 item-menu"><h4>Mac</h4></div>
+        <div class="grid4 item-menu"><h4>iPad</h4></div>
+        <div class="grid5 item-menu"><h4>iPhone</h4></div>
+        <div class="grid6 item-menu"><h4>Watch</h4></div>
+        <div class="grid7 item-menu"><h4>TV</h4></div>
+        <div class="grid8 item-menu"><h4>Music</h4></div>
+        <div class="grid9 item-menu"><h4>Soporte</h4></div>
+        <div class="grid10 item-menu"><h4>Dónde comprar</h4></div>
+        <div class="grid11 item-menu"><i class="fas fa-search"></i></div>
+        <div class="grid12 item-menu"><h4></h4></div>
+       </div>
+    
         
-
+    
+        
     </div>
-    <div class="body-container  ">
+    <div class="body-container">
             <div class="grandesnoticias body-item-1" style="grid-row:1/2;">
                 <h1 style="font-family:FuenteDos;">
                     Grandes noticias.
