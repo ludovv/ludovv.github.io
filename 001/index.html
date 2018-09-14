@@ -30,6 +30,8 @@
         /* row-gap: 30px; */
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
+        position:sticky;
+        top:0;
         
     }
     .header-menu{
@@ -105,12 +107,23 @@
         padding-top: 5px;
         padding-bottom: 5px;
         
+        
     }
     .menu-icon{
         grid-column: 3/4;
         align-self: center;
         justify-self: center;
       
+    }
+
+    @font-face {
+        font-family: FuentePulenta;
+        src: url(fuentebkn.ttf);
+    }
+
+    @font-face{
+        font-family: FuenteDos;
+        src:url(SF-Pro-Display-Bold.otf);
     }
     
     p{
@@ -149,7 +162,6 @@
     }
 
     .fas{
-        display:none;
     }
     @media screen and (min-width: 601px){
         .about, .contact{
@@ -158,8 +170,10 @@
     }
 
     .item-menu{
-        padding: 10px;
+        
         text-align: center;
+        color:white;
+        
         
     }
     .header-container{
@@ -167,11 +181,11 @@
         align-content: middle;
         grid-column: 1/7;
         justify-self: normal;
-        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
-        border-bottom: 1px solid #e7e7e7;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
         position: sticky;
         top:0;
-        background-color: white;
+        background-color: black;
 
     }
     .grid1{
@@ -198,7 +212,7 @@
     }
     .grid8{
         grid-column: 8/9;
-        align-self: center;
+        
     }
     h4, h6{
         font-family: "Montserrat", sans-serif;
@@ -209,15 +223,24 @@
         font-family: 'Courier New', Courier, monospace;
         font-size: 15px;
     }
+    h4{
+        font-family: FuentePulenta;
+        
+    }
     .body-container{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color:white;
+        background-color: black;
     }
 
     .body-parallax{
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+   
+    }
+
+    .jaja{
+        box-shadow: 0px 5px 100px 2px black;
+
     }
 
     @media screen and (max-width: 600px){
@@ -239,28 +262,47 @@
 
     }
 
+    .fa-search{
+        color:white;
+        padding: 20px;
+
+    }
+
+    .body-item-1{
+        grid-column: 1/4;
+        text-align: center;
+        font-size:50px;
+        color:#d0ad95;
+        /*font-family: FuentePulenta;*/
+    }
+
+
     </style>
 
     <div class="grid-container">
-        <div class="header-container">
+        <div class="header-container jaja">
             <div class="grid1 item-menu">
-                <img height="50px" src="../001/img/logo.PNG" alt="">
+                
+
             </div>
-            <div class="grid2 item-menu"><h4>HOLA</h4></div>
-            <div class="grid3 item-menu"><h4>MENU</h4></div>
-            <div class="grid4 item-menu"><h4>CONTACTO</h4></div>
-            <div class="grid5 item-menu"><h4>CLIENTES</h4></div>
-            <div class="grid6 item-menu"><h4>RECOMENDAR</h4></div>
-            <div class="grid7 item-menu"><h6>Ventas: +569 9999 2999<br>Contacto: +569 9898 1828</h6></div>
-            <div class="grid8 item-menu"><input type="button" value="Pruébalo Gratis"></div>
+            <div class="grid2 item-menu"><h4><i class="fab fa-apple"></i>
+            </h4></div>
+            <div class="grid3 item-menu"><h4>Mac</h4></div>
+            <div class="grid4 item-menu"><h4>iPad</h4></div>
+            <div class="grid5 item-menu"><h4>iPhone</h4></div>
+            <div class="grid6 item-menu"><h4>Watch</h4></div>
+            <div class="grid7 item-menu"><h4>TV</h4></div>
+            <div class="grid8 item-menu"><h4>Music</h4></div>
+            <div class="grid9 item-menu"><h4>Soporte</h4></div>
+            <div class="grid10 item-menu"><h4>Dónde comprar</h4></div>
+            <div class="grid11 item-menu"><i class="fas fa-search"></i></div>
+            <div class="grid12 item-menu"><h4></h4></div>
+         
             
           
             
         </div>
-        <div class="body-container body-parallax">
-            <img src="" alt="">
-            <div style="height: 1000px">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa nisi obcaecati harum suscipit ipsum consectetur velit, quasi impedit a pariatur molestiae voluptatibus est eaque modi consequuntur saepe dolorem officiis corrupti.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae est placeat asperiores cupiditate reiciendis exercitationem, quas, nostrum omnis incidunt temporibus, provident in ipsum. Et sapiente eos excepturi corrupti sit natus. </div>
-        </div>
+        
 
 
 
@@ -323,6 +365,22 @@
 
     -->
     </div>
+    <div class="body-container body-parallax ">
+            <img src="" alt="">
+            <div class="body-item-1" style="height: 1000px">
+                <h1 style="font-family:FuenteDos;">
+                    Grandes noticias.
+                    </h1>
+            </div>
+            <div style="height:1000px"></div>
+            <div class="body-item-1" style="height: 1000px">
+                    <h1 style="font-family:FuenteDos;">
+                        Netcar Bueno.
+                        </h1>
+                </div>
+        </div>
+
+
     <script>
         /*
         $(".menu-icon").click(function(){
