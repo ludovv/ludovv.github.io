@@ -120,6 +120,8 @@
     
 
     .img-body{
+        padding-left: 3vh;
+        padding-right: 3vh;
         width: 100%;
         height: auto;
     }
@@ -150,9 +152,17 @@
                 </div>
         </div>
 
-        <div class="body-">
-            <h1 style="display:none;">body</h1>
-            <img class="img-body" src="body.jpg" alt="">
+        <div id="slideshow" class="body-">
+            <div>
+                <img class="img-body" src="img/A.png" alt="">
+            </div>
+            <div>
+                <img class="img-body" src="img/B.png" alt="">
+
+            </div>
+            <div>
+                <img class="img-body" src="img/C.png" alt="">
+            </div>
             
         </div>
 
@@ -189,6 +199,17 @@
     <script>
     var scene = document.getElementById('scene');
     var parallaxInstance = new Parallax(scene);
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+    $('#slideshow > div:first')
+        .fadeOut(1)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 6000);
 
     </script>
     
