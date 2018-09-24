@@ -120,8 +120,7 @@
     
 
     .img-body{
-        padding-left: 3vh;
-        padding-right: 3vh;
+      
         width: 100%;
         height: auto;
     }
@@ -154,10 +153,10 @@
 
         <div id="slideshow" class="body-">
             <div>
-                <img class="img-body" src="img/A.png" alt="">
+                <img class="img-body" src="img/B.png" alt="">
             </div>
             <div>
-                <img class="img-body" src="img/B.png" alt="">
+                <img class="img-body" src="img/A.png" alt="">
 
             </div>
             <div>
@@ -206,7 +205,7 @@
     $('#slideshow > div:first')
         .fadeOut(1)
         .next()
-        .fadeIn(1000)
+        .fadeIn(2000)
         .end()
         .appendTo('#slideshow');
     }, 6000);
