@@ -12,9 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.jpg" sizes="64x64" />
-
-
-
     <title>Los Psiconautas | Sitio Oficial</title>
 </head>
 <body style="margin:0; padding:0;">
@@ -115,17 +112,21 @@
         }
         
     }
- 
-        
     
-
+    img, h1 {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+        
     .img-body{
       
         width: 100%;
         height: auto;
     }
-    .grid-facebook{
-    }
+   
     
 
     </style>
@@ -136,15 +137,15 @@
                 <div class="contenedor">
                     <div id="scene">
                     <div  data-depth="0.3" class="uno">
-                        <h1>LOS   PSICONAUTAS</h1>
+                        <h1>LOS PSICONAUTAS</h1>
                     </div>
                         
                     <div data-depth="0.4" class="dos">
-                        <h1>LOS   PSICONAUTAS</h1>
+                        <h1>LOS PSICONAUTAS</h1>
                     </div>
             
                     <div data-depth="0.6" class="tres">
-                        <h1>LOS   PSICONAUTAS</h1>
+                        <h1>LOS PSICONAUTAS</h1>
                     </div> 
                 </div>
                 
@@ -153,14 +154,14 @@
 
         <div id="slideshow" class="body-">
             <div>
-                <img class="img-body" src="img/B.png" alt="">
+                <img draggable="false" class="img-body" src="img/B.png" alt="">
             </div>
             <div>
-                <img class="img-body" src="img/A.png" alt="">
+                <img draggable="false" class="img-body" src="img/A.png" alt="">
 
             </div>
             <div>
-                <img class="img-body" src="img/C.png" alt="">
+                <img draggable="false" class="img-body" src="img/C.png" alt="">
             </div>
             
         </div>
@@ -175,12 +176,12 @@
         <div></div>
         <div></div>
         <div class="grid-youtube" style="padding:20px;">
-            <img style="    width: 15vh;" src="img/yt_logo_rgb_dark.png" alt="">
+            <img draggable="false" style="width: 15vh;" src="img/yt_logo_rgb_dark.png" alt="">
         </div>
         <div class="grid-facebook" style="padding:20px;">
         </div>
         <div class="grid-spotify" style="padding: 20px;">
-            <img style="width: 15vh;" src="img/Spotify_Logo_RGB_Green.png" alt="">
+            <img draggable="false" style="width: 15vh;" src="img/Spotify_Logo_RGB_Green.png" alt="">
         </div>
         
         <div></div>
