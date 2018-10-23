@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:site_name" content="Los Psiconautas | Sitio Oficial">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Los Psiconautas | Sitio Oficial">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.jpg" sizes="64x64" />
+    <title>Los Psiconautas | Sitio Oficial</title>
+</head>
+<body style="margin:0; padding:0;">
+    <style>
+
+    body{
+        background-color: #212226;
+    }
+    h1{
+        font-family: 'Monoton', cursive;
+        font-size: 51px;
+
+ 
+    }
+    .uno{
+        position: relative;
+        z-index: 3;
+        color: #9696fe;
+        opacity: 0.5;
+        text-shadow: 2px -2px 8px red;
+        margin-left: 21px;
+        margin-top: -40px;
+     
+    }
+    .dos{
+        position: absolute;
+        
+        color: #46e5b2;
+        
+        z-index: 2;
+        opacity: 0.5; 
+        text-shadow: -2px 2px 8px blue;
+        margin-left: 20px;
+        margin-top: -31px;
+
+    }
+    .tres{
+        position: absolute;
+        z-index: 1;
+        color: #ff8989;;
+        opacity: 0.5;
+        margin-left: 18px;
+        margin-top: -27px;
+
+    }
+    .cuatro{
+        position: absolute;
+        z-index: 4;
+        color: #ff8989;
+        opacity: 0.5;
+
+    }
+
+    .grid-container{
+        grid-gap: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header-{
+        grid-column: 1/4;
+        grid-row: 1/2;
+        justify-self: center;
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    .body-{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        padding: 20px;
+        justify-self: center;
+       
+    }
+    .footer-{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       
+        padding: 20px;
+        justify-self: center;
+        
+    }
+
+    @media screen and (max-width:600px) {
+        h1{
+            font-size: 30px;
+        }
+        .header-{
+            padding-top: 60px;
+            padding-bottom: 3vh;
+            padding-left: 3vh;
+            padding-right: 3vh;
+        }
+        .grid-youtube{
+            grid-column: 4/9;
+        }
+        .grid-spotify{
+            grid-column: 4/9;
+        }
+        
+    }
+    
+    img, h1 {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+        
+    .img-body{
+      
+        width: 100%;
+        height: auto;
+    }
+   
+    
+
+    </style>
+   
+
+    <div class="grid-container">
+        <div class="header-">
+                <div class="contenedor">
+                    <div id="scene">
+                    <div  data-depth="0.3" class="uno">
+                        <h1>LOS PSICONAUTAS</h1>
+                    </div>
+                        
+                    <div data-depth="0.4" class="dos">
+                        <h1>LOS PSICONAUTAS</h1>
+                    </div>
+            
+                    <div data-depth="0.6" class="tres">
+                        <h1>LOS PSICONAUTAS</h1>
+                    </div> 
+                </div>
+                
+                </div>
+        </div>
+
+        <div id="slideshow" class="body-">
+            <div>
+                <img draggable="false" class="img-body" src="img/B.png" alt="">
+            </div>
+            <div>
+                <img draggable="false" class="img-body" src="img/A.png" alt="">
+
+            </div>
+            <div>
+                <img draggable="false" class="img-body" src="img/C.png" alt="">
+            </div>
+            
+        </div>
+
+        
+
+
+    </div>
+    <div class="footer-">
+     
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="grid-youtube" style="padding:20px;">
+            <img draggable="false" style="width: 15vh;" src="img/yt_logo_rgb_dark.png" alt="">
+        </div>
+        <div class="grid-facebook" style="padding:20px;">
+        </div>
+        <div class="grid-spotify" style="padding: 20px;">
+            <img draggable="false" style="width: 15vh;" src="img/Spotify_Logo_RGB_Green.png" alt="">
+        </div>
+        
+        <div></div>
+        <div></div>
+        <div></div>
+
+        
+    </div>
+              
+
+
+
+
+
+    <script>
+    var scene = document.getElementById('scene');
+    var parallaxInstance = new Parallax(scene);
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+    $('#slideshow > div:first')
+        .fadeOut(1)
+        .next()
+        .fadeIn(2000)
+        .end()
+        .appendTo('#slideshow');
+    }, 6000);
+
+    </script>
+    
+</body>
+</html>

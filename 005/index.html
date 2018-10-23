@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Web Menu Responsive">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Web Menu Responsive</title>
+</head>
+<body style="margin:0;padding:0;">
+    <style>
+    .titulo{
+        background-color: #E84A5F;
+
+    }
+
+    .disable-select{
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+         user-select: none;
+    }
+
+    .grid-container{
+        background-color: white;
+        display:grid; 
+        /* row-gap: 30px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        
+    }
+    .header-menu{
+        font-family: "Montserrat" sans-serif;
+        box-shadow: 0px 1px black;
+        border-bottom: 1px solid white;
+        width: 100%;
+        text-shadow: 1px 1px 0px red;
+        position: sticky; 
+        position: -webkit-sticky;
+        top: 0;
+        display: grid;
+        grid-column: 1/4;
+        color:white;
+        background-color: black;
+        border-radius: 20px;
+    }
+    .title{
+        text-align: center;
+        font-style: normal;
+       
+        font-family: 'Montserrat', sans-serif; 
+        color:black;
+        grid-column: 2/3;
+    }
+    .title-container{
+        background-color:white;
+        width: 100%;
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+    .body-{
+        padding: 0px 0px 10px 0px;
+        text-shadow: -1px 1px 0px white;
+        color: black; 
+        font-family: 'PT Mono', monospace;
+        /*grid-column: 2/3;*/
+        text-align: center;
+    }
+    .footer{
+        box-shadow: 0px -1px black;
+        border-top: 1px solid white; 
+        height: 30px;
+        background-color: black;
+        grid-column:1/4; 
+        width: 100%; 
+        position: sticky; 
+        position: -webkit-sticky; 
+        bottom:0;
+    }
+
+    .footer-text{
+        text-shadow: 1px 0px 1px red;
+        vertical-align: -webkit-baseline-middle;
+        text-decoration: none;
+        font-family: 'PT Mono', monospace;
+        color:white;
+    }
+    .img-style{
+        text-align:center;
+        /*box-shadow: 0px 0px 20px 2px black;*/
+    }
+    .footer-icon{
+        vertical-align: sub;
+    }
+    .img-title{
+        font-size: calc(16px + 2vw);
+    }
+    .menu-item{
+        justify-self: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+    }
+    .menu-icon{
+        grid-column: 3/4;
+        align-self: center;
+        justify-self: center;
+      
+    }
+    
+    p{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .menu-invisible{
+        grid-column:  1/2;
+    }
+
+    .parrafo1{
+        grid-row: 4/7;
+        grid-column: 1/2;
+    }
+    .parrafo2{
+        grid-row: 4/5;
+        grid-column: 3/4;
+    }
+    @media screen and (max-width: 600px){
+        .menu-item{
+            grid-column: 1/2!important;
+        }
+       
+        .about, .contact{
+            display: none;
+            border-top: 1px solid white;
+        }
+        .fas{
+            display: block!important;
+        }
+        .body-{
+            grid-column:1/4;
+        }
+        .parrafo1{
+            grid-row: 3/4;
+        }
+        .parrafo2{
+            grid-row: 4/5;
+        }
+
+    }
+
+    .fas{
+        display:none;
+    }
+    @media screen and (min-width: 601px){
+        .about, .contact{
+            display: block!important;
+        }
+    }
+
+  
+    
+    </style>
+
+    <div class="grid-container">
+        <div class="title-container">
+            <div class="menu-invisible"></div>
+            
+            <div class="title">
+                    <h1 class="disable-select">TITLE</h1>
+            </div>
+            <div class="menu-icon" ><i class="fas fa-bars"></i> </div>
+            
+        </div>
+        <div class="header-menu">
+            
+            <div style="grid-column: 1/2;" class="menu-item home">HOME</div>
+            <div id="panel" style="grid-column: 2/3;" class="menu-item about">ABOUT</div>
+            <div id="panel" style="grid-column: 3/4;" class="menu-item contact">CONTACT</div>
+        </div>
+        <div class="body- parrafo1 disable-select"> <h1 class="img-title" >Lorem</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam a rem beatae, sapiente tempora ut ex nesciunt dignissimos debitis distinctio iste? Assumenda quibusdam vero, cum ad et facere similique!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nesciunt similique aliquam dolorum, debitis impedit sed ipsum, corporis asperiores voluptatem, excepturi eius nulla ipsa quam a magni vel doloribus enim.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nostrum officiis a consectetur ut, quas vel, in voluptatum est aperiam esse doloremque, dicta magni expedita quibusdam adipisci libero explicabo aspernatur.
+            </p>
+        </div>
+        <div></div>
+            <div>
+                    <img class="img-style" src="" height="400px" alt="">
+            </div>
+        <div></div>
+      
+        <div class="body- parrafo2 disable-select"><h1 class="img-title" >Lorem</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus pariatur iste delectus et error repudiandae distinctio saepe ut optio animi magni aliquam earum impedit voluptates voluptas, fugit non numquam. Commodi!</p>
+        </div>
+
+        <div></div>
+        
+        <div>
+                <img class="img-style"  src="" height="150px" alt="">
+        </div>
+        <div></div>
+        <div></div>
+        <div>
+                <img class="img-style" src="" height="150px" alt="">
+        </div>
+        <div></div>
+        <div class="footer" >
+            
+            <a class="footer-text" href="https://ludovv.github.io/">
+                <img class="footer-icon" width="25px" height="25px" src="../img/arrowleft.gif" alt="">VOLVER</a>
+        </div>
+    </div>
+    <script>
+
+
+        $( ".menu-icon").click(function () {
+        if ($(".about, .contact").is(":hidden")){
+            $(".about, .contact").slideDown("slow");
+        } else {
+            $(".about, .contact").slideUp();
+        }
+        });
+    </script>
+</body>
+</html>
